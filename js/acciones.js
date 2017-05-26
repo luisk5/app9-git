@@ -1,7 +1,7 @@
 // JavaScript Document
 
-$(document).ready(function (e){
-	document.addEventListener("deviceready", onDeviceReady, false);
+$(document).ready(function (e) {
+	document .addEventListener("deviceready", onDeviceReady, false);
 	
 });
 
@@ -28,7 +28,7 @@ $('#watch').on('click',function (){
 	
 	function onSuccess(position){
 		
-		alert('Latitude:'  +position.coords.latitude  +'\n'+
+	  alert('Latitude:'  +position.coords.latitude  +'\n'+
 		'Longitude:'  +position.coords.longitude  +'\n'+
 		'Altitude:'  +position.coords.altitude  +'\n'+
 		'Accuracy:'  +position.coords.accuracy  +'\n'+
@@ -62,7 +62,7 @@ $('#accuracy').html(position.coords.accuracy);
 $('#aaccuracy').html(position.coords.altitudeAccuracy);
 $('#headingg').html(position.coords.heading);
 $('#speed').html(position.coords.speed);
-$('#timestamp').html(position.coords.timestamp);
+$('#timestamp').html(position.timestamp);
 	};
 	
 	function onError(error){
