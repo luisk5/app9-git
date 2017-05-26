@@ -24,7 +24,7 @@ $('#watch').on('click',function (){
 		maximumAge: 3600000
 	}
 	
-	var watchID = navigator.geolocation.getCurrentPosition(onSuccesss, onError, options);
+	var watchID = navigator.geolocation.getCurrentPosition(onSuccesss,onError,options);
 	
 	function onSuccess(position){
 		
@@ -51,7 +51,7 @@ function watchPosition(){
 		enableHighAccuracy :true,
 	}
 	
-	var watchID = navigator.geolocation.watchPosition(onSuccess, onError, options);
+	var watchID = navigator.geolocation.watchPosition(onSuccess,onError,options);
 	
 	function onSucces(position){
 		
